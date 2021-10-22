@@ -1,0 +1,68 @@
+/// @description  TweenPathPhy(target,ease,mode,delta,delay,dur,path,absolute)
+/// @param target
+/// @param ease
+/// @param mode
+/// @param delta
+/// @param delay
+/// @param dur
+/// @param path
+/// @param absolute
+/// @description Eases instance position using a path resource
+/// @param target
+/// @param ease
+/// @param mode
+/// @param delta
+/// @param delay
+/// @param dur
+/// @param path
+/// @param absolute
+function TweenPathPhy(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7) {
+
+	/// return: tween id
+
+	if (!ds_map_exists(global.__PropertySetters__, ext_path_phy__))
+	{
+	    TGMS_BuildProperty("ext_path_phy", ext_path_phy__, undefined);
+	}
+
+	var _repeat = (argument2 == TWEEN_MODE_REPEAT);
+
+	with(argument0)
+	{
+	    // IF absolute
+	    if (argument7)
+	    {
+	        var _data;
+	        _data[6] = _repeat;
+	        _data[0] = argument6;
+	        _data[1] = argument7;
+	        _data[2] = 0;
+	        _data[3] = 0;
+	        _data[4] = 0;
+	        _data[5] = 0;
+        
+	        return TGMS_TweenFire(argument0, ext_path_phy__, argument1, argument2, argument3, argument4, argument5, 0, 1, _data);
+	    }
+	    else
+	    {
+	        var _path_xstart = path_get_x(argument6, 0);
+	        var _path_ystart = path_get_y(argument6, 0);
+        
+	        var _data;
+	        _data[6] = _repeat;
+	        _data[0] = argument6;
+	        _data[1] = argument7;
+	        _data[2] = _path_xstart;
+	        _data[3] = _path_ystart;
+	        _data[4] = phy_position_x-_path_xstart;
+	        _data[5] = phy_position_y-_path_ystart;
+        
+	        return TGMS_TweenFire(argument0, ext_path_phy__, argument1, argument2, argument3, argument4, argument5, 0, 1, _data);
+	    }
+	}
+
+
+
+
+
+}

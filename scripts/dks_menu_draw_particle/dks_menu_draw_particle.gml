@@ -1,0 +1,23 @@
+function dks_menu_draw_particle() 
+{
+ dks_draw_button_reel(button_create_particle);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	dks_draw_button_reel(button_part_sprite_info);
+	dks_draw_button_reel(button_part_size_info);
+	dks_draw_button_reel(button_part_color3_info);
+	dks_draw_button_reel(button_part_alpha3_info);
+	dks_draw_button_reel(button_part_direction_info);
+	dks_draw_button_reel(button_part_speed_info);
+	dks_draw_button_reel(button_part_gravity_info);
+	dks_draw_button_reel(button_part_orientation_info);
+	dks_draw_button_reel(button_part_blend_info);
+	dks_draw_button_reel(button_part_numbs_info);
+	dks_draw_button_reel(button_part_emitter_info);
+	dks_draw_button_reel(button_part_region_info);
+ draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+ dks_menu_draw_color(slider_particle_color1,prt_color1);
+	dks_menu_draw_color(slider_particle_color2,prt_color2);
+	dks_menu_draw_color(slider_particle_color3,prt_color3);
+}

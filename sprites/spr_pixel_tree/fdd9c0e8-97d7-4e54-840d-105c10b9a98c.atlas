@@ -1,0 +1,20 @@
+
+spr_pixel_tree.png
+size: 128,128
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Trees_0000_Capa-2
+  rotate: false
+  xy: 62, 31
+  size: 57, 77
+  orig: 57, 77
+  offset: 0, 0
+  index: -1
+Trees_0001_Capa-3
+  rotate: false
+  xy: 0, 0
+  size: 62, 108
+  orig: 62, 108
+  offset: 0, 0
+  index: -1

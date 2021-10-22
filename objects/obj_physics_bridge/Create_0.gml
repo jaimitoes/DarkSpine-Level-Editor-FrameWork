@@ -1,0 +1,10 @@
+event_inherited();
+xx = 0;
+yy = 0;
+size = 0;
+vertex_format_begin();
+vertex_format_add_position_3d();
+vertex_format_add_texcoord();
+vertex_format_add_colour();
+formpath = vertex_format_end();
+buffpath = vertex_create_buffer();

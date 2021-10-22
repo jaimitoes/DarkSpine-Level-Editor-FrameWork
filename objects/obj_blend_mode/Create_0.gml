@@ -1,0 +1,14 @@
+event_inherited();
+blend[0] = bm_zero;
+blend[1] = bm_one;
+blend[2] = bm_src_colour;
+blend[3] = bm_inv_src_color;
+blend[4] = bm_src_alpha;
+blend[5] = bm_inv_src_alpha;
+blend[6] = bm_dest_alpha;
+blend[7] = bm_inv_dest_alpha;
+blend[8] = bm_dest_color;
+blend[9] = bm_inv_dest_colour;
+blend[10] = bm_src_alpha_sat;
+blend1 = 0;
+blend2 = 0;

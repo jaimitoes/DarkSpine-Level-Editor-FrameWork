@@ -1,0 +1,1 @@
+function dks_null() {}
